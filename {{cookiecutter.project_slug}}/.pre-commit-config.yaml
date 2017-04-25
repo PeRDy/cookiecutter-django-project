@@ -1,0 +1,25 @@
+-   repo: git://github.com/pre-commit/pre-commit-hooks
+    sha: 8e0d7bab601ce6a8775ea98082938e60fc80eb7f
+    hooks:
+    -   id: check-added-large-files
+    -   id: check-merge-conflict
+    -   id: check-xml
+    -   id: check-yaml
+    -   id: double-quote-string-fixer
+    -   id: end-of-file-fixer
+    -   id: fix-encoding-pragma
+        args:
+        - --remove
+    -   id: name-tests-test
+        args:
+        - --django
+    -   id: pretty-format-json
+        args:
+        - --autofix
+        - --indent 2
+-   repo: git://github.com/guykisel/prospector-mirror
+    sha: 00fbd80101566b1b9c873c71f2ab7b95b8bd0a7d
+    hooks:
+    -   id: prospector
+        args:
+        - --path=.

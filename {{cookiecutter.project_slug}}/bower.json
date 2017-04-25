@@ -1,0 +1,23 @@
+{
+  "name": "{{ cookiecutter.project_slug }}",
+  "version": "{{ cookiecutter.version }}",
+  "authors": [
+    "{{ cookiecutter.full_name }} <{{ cookiecutter.email }}>"
+  ],
+  "description": "{{ cookiecutter.project_name }}",
+  "moduleType": [],
+  "license": "GPLv3",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "v4.0.0-alpha.6",
+    "font-awesome-sass": "~4.7.0",
+    "jquery": "~3.1.1"
+  }
+}

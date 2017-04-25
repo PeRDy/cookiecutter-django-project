@@ -1,0 +1,13 @@
+## System dependencies and utilities
+clinner
+health_check
+
+## Django
+Django
+django-configurations
+django-extensions
+psycopg2
+
+## Frontend
+django-gulp
+whitenoise

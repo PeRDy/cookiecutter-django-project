@@ -1,0 +1,14 @@
+{
+    "full_name": "Your name",
+    "email": "Your address email (eg. you@example.com)",
+    "github_username": "Your github username",
+    "project_name": "Name of the project",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
+    "app_slug": "{{ cookiecutter.project_slug.replace('-', '_') }}",
+    "project_url": "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}",
+    "project_short_description": "A short description of the project",
+    "release_date": "{% now 'local' %}",
+    "version": "1.0.0",
+    "python_version": "3.6",
+    "_extensions": ["jinja2_time.TimeExtension"]
+}
