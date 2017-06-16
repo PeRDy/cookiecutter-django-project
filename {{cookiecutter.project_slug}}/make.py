@@ -46,7 +46,8 @@ def down(*args, **kwargs):
 
 @command(command_type=CommandType.SHELL_WITH_HELP, parser_opts={'help': 'Restart application stack'})
 def restart(*args, **kwargs):
-    cmd = shlex.split('docker-compose restart') + list(args)
+    cmd = shlex.split('docker-compose restart')
+    cmd += args
     return [cmd]
 
 

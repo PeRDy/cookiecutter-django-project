@@ -3,7 +3,7 @@ Development settings
 """
 import os
 
-from website.settings.base import Base
+from {{ cookiecutter.app_slug }}.settings.base import Base
 
 __all__ = ['Development']
 
